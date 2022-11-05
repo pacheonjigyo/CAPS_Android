@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="org.tensorflow.demo.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="103dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/text_car"
+            android:layout_marginTop="10dp"
+            android:background="#AAAAAA"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumsquarer"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="30dp"
+            android:text="CAPS를 시작합니다\n"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquarel"
+            android:layout_marginLeft="30dp"
+            android:text="실시간 차량 번호 조회를 위해\n로그인 또는 회원가입을 해주세요."
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="910px"
+        android:layout_height="120px"
+        android:backgroundTint="#00E6AC"
+        android:hint="아이디"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_below="@id/et_id"
+        android:layout_width="910px"
+        android:layout_height="120px"
+        android:inputType="textPassword"
+        android:hint="비밀번호"
+        android:backgroundTint="#00E6AC"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="910px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/login"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp" />
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="910px"
+            android:layout_height="120px"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumsquareeb"
+            android:text="@string/signup" />
+
+    </LinearLayout>
+
+</RelativeLayout>

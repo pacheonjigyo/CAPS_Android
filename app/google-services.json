@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "278486056725",
+    "firebase_url": "https://caps-273705.firebaseio.com",
+    "project_id": "caps-273705",
+    "storage_bucket": "caps-273705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278486056725:android:c450cf96286da40c45f31c",
+        "android_client_info": {
+          "package_name": "org.tensorflow.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278486056725-lql49edderug8fqds470krnajqgqvs8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.demo",
+            "certificate_hash": "3400693662204f1af99d5ca1b8fe738ee50bc7bf"
+          }
+        },
+        {
+          "client_id": "278486056725-moevhbjlu9muprh6o6optv08end9bkek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.demo",
+            "certificate_hash": "16444ada70a2a1c9fd3b694962552692babbf16b"
+          }
+        },
+        {
+          "client_id": "278486056725-id0ehnqhoo5p5rmpahtme7mv4lduue48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkutkeJ_2z32qTAX9dfE7WwV2hqs0A6mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278486056725-id0ehnqhoo5p5rmpahtme7mv4lduue48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

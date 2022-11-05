@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2016 The TensorFlow Authors. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <org.tensorflow.demo.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <org.tensorflow.demo.OverlayView
+        android:id="@+id/tracking_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <org.tensorflow.demo.OverlayView
+        android:id="@+id/debug_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/nanumsquareb"
+                android:gravity="center"
+                android:text="\n실시간 차량 번호 조회\n"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/nanumsquarer"
+                android:text="내 정보 수정"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/nanumsquarel"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="false"
+            android:bufferType="spannable"
+            android:text="차량 번호를 스캔하여 나타나는\n사각형을 터치해보세요."
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="34dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:background="@drawable/flash_off" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/nanumsquarel"
+            android:gravity="center"
+            android:text="\n\nCar Plate Seeker with YOLO V2 \n Copyright (c) 2020 이정빈, 박재현, 황민욱 All rights reserved.\n\n"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
